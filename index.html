@@ -3,75 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio - Luiz henrique</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link para o CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Meu Portfólio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Luiz henrique</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section id="sobre">
-            <div class="container">
+    <!-- Seção Sobre -->
+    <section id="sobre" class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
                 <h2>Sobre Mim</h2>
-                <p>Olá! Sou um desenvolvedor web com experiência em HTML, CSS e JavaScript.</p>
+                <p>Sou Luiz henrique, desenvolvedor web com experiência em criação de sites responsivos
+                     e interativos. Meu foco é em HTML, CSS, JavaScript e uso de frameworks como Bootstrap para garantir a melhor experiência ao usuário.</p>
             </div>
-        </section>
-
-        <section id="projetos">
-            <div class="container">
-                <h2>Meus Projetos</h2>
-                <article class="projeto">
-                    <h3>Projeto 1</h3>
-                    <p>Eu jundo de colegas de sala meus, criamos um ste de educação digital sobre tecnologia utilizando html e css 
-                        criando assim um site apresentável descrevendo as competências ensinadas no site.
-                    </p>
-                </article>
-                <article class="projeto">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição detalhada do Projeto 2. Explique o objetivo, as tecnologias usadas e os resultados alcançados.</p>
-                </article>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/350" class="img-fluid rounded-circle" alt="Imagem de João Silva">
             </div>
-        </section>
-
-        <section id="contato">
-            <div class="container">
-                <h2>Contato</h2>
-                <form id="formContato">
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" required></textarea>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Meu Portfólio | Todos os direitos reservados</p>
         </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="habilidades" class="container mt-5">
+        <h2>Minhas Habilidades</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>HTML</h4>
+                <div class="progress">
+                    <div class="progress-bar" data-width="90"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>CSS</h4>
+                <div class="progress">
+                    <div class="progress-bar" data-width="80"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>JavaScript</h4>
+                <div class="progress">
+                    <div class="progress-bar" data-width="75"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="container mt-5">
+        <h2>Meus Projetos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Este é um projeto que criei para demonstrar minhas habilidades em design responsivo e uso de JavaScript.</p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Um site dinâmico que interage com a API para exibir dados em tempo real.</p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projeto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 3</h5>
+                        <p class="card-text">Desenvolvimento de jogo de adivinhação onde o jogador deve descobrir o número usando a voz.</p>
+                        <a href="#" class="btn btn-primary">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="container mt-5">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-light">
+        <p>&copy; 2024 João Silva. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Bootstrap JS e dependências (Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Script JS personalizado -->
     <script src="scripts.js"></script>
 </body>
 </html>
